@@ -23,7 +23,7 @@ ENV  			DEBIAN_FRONTEND noninteractive
 
 RUN				apt-get install -y bareos-client; \
 				tar -czvf /opt/bareos-etc-dir.tgz /etc/bareos; \
-				rm -rf /etc/bareos; mkdir /etc/bareos; mkdir /data
+				rm -rf /etc/bareos; mkdir /etc/bareos; mkdir /data; mkdir /restore
 
 
 
